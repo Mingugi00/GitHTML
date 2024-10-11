@@ -12,8 +12,20 @@
         - 방법 2가지 /1) 직접 파일을 다운로드해서 사용 2) 네트워크를 통해서 주소를 활용
         1) 파일방식 => 실제 서버에 배포해서 활용할 때
         2) 네트워크방식 => 코드를 공유, 웹사이트에 배포할 때
+
+        파일의 경로를 찾는 방법 2가지
+        1) 절대경로 = 변하지 않는 경로 -> URL
+        2) 상대경로 = 작업중인 파일을 기준으로 변하는 경로
+            - 조회하고자 하는 파일이 폴더안에 있는 경우는 폴더명을 작성
+            - 폴더를 들어갈 때는 / 기호를 활용한다.
+            - 현재 위치에서 폴더를 한번 나가는 경우 -> ../
+            - 현재 위치에서 폴더를 여러번 나가는 경우 -> 나오고 싶은 숫자만큼 ../ 작성
+            - 현재 위치에서 루트폴더(메인폴더)로 한번에 나가는 경우 -> (맨앞에)
+            - 현재 위치를 명시하는 경로방법 -> ./(생략가능)
         -->
-    <img src="img.jpg">
+    <img src="../../이미지/이미지2/img.jpg">
+    <img src="/이미지/이미지2/img.jpg">
+    <img src="./img.jpg"
     <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA2MjBfMjU0%2FMDAxNjg3MjcwNzMzMDQw.SYKOG-gPSESr628GV36CtsyLDekOaqGSlnrV1KJFC3og.P4AphJR5BQzGqpZcm6upeIF98W1TvDIQwyTJlBtXGzQg.JPEG.baengyun%2FFzDmQYpXgAEnQWQ.jpg&type=a340">
     <img src="img123.jpg">
     <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F410%2F2024%2F04%2F23%2F0000993767_001_20240423211901375.jpg&type=a340">

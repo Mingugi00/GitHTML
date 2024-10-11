@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* container 부모요소 접근 */
+        .container{
+            background-color: whitesmoke;
+            height: 100px;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box1,.box3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 15%;
+        }
+
+        /* box2,box3 제어하기
+        ==> display : flex
+        ==> 메인축, 서브축 정렬
+        */
+        .box2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 70%;
+        }
+
+        .box2>a{
+            padding: 15px;
+            margin: 10px;
+            color: black;
+            font-weight: 600;
+            font-size: 25px;
+           
+            
+        }
+        .box3>a{
+            padding: 15px;
+            margin: 10px;
+            color: black;
+            font-weight: 400;
+            font-size: 25px; 
+            /* 폰트사이즈 ==>25px
+                글자색
+                폰트굵기 ==>400
+                마진, 패딩 넣어보기
+            */
+        }
+
+        .box2>a:hover,
+        .box3>a:hover{
+            /* 배경색, 글자색 */
+            background-color: black;
+            color: white;
+        }
+
+        a{
+            text-decoration: none;
+            /* text-decoration : none */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+           <h1>SMHRD</h1>
+        </div>
+        <div class="box2">
+            <a href="#">메뉴</a>
+            <a href="#">베스트</a>
+            <a href="#">뉴스</a>
+        </div>
+        <div class="box3">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+        </div>
+    </div>
+</body>
+</html>
